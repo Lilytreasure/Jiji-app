@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/hmBtn"
+        android:icon="@drawable/ic_home1">
+
+    </item>
+    <item android:title="Saved"
+        android:id="@+id/svBtn"
+        android:icon="@drawable/ic_saved">
+
+    </item>
+    <item android:title="Sell"
+        android:id="@+id/SellBtn"
+        android:icon="@drawable/ic_sell1">
+
+    </item>
+
+    <item android:title="Messages"
+        android:id="@+id/MessBtn"
+        android:icon="@drawable/ic_messages">
+
+    </item>
+    <item android:title="Profile"
+        android:id="@+id/ProBtn"
+        android:icon="@drawable/ic_person">
+
+    </item>
+
+
+
+
+</menu>
