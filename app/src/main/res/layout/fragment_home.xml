@@ -7,7 +7,6 @@
     tools:context=".Fragments.FragmentHome"
    android:fitsSystemWindows="true" >
 
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -163,15 +162,15 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@android:color/darker_gray"
+                            app:strokeColor="@color/darker_grey"
                             app:shapeAppearanceOverlay="@style/circleImageView"
                             android:src="@drawable/frameimg"
                             android:background="@drawable/round_bg"
-                            android:layout_margin="10dp" />
+                            android:layout_margin="10dp"/>
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
                             android:text="Trend"
                             android:gravity="center_horizontal"
                             android:layout_gravity="center">
@@ -196,12 +195,12 @@
                             app:strokeColor="@android:color/darker_gray"
                             app:shapeAppearanceOverlay="@style/circleImageView"
                             android:src="@drawable/car1"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/round_bg"/>
+                            android:background="@drawable/round_bg"
+                            android:layout_margin="10dp"/>
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
                             android:text="Vehicles"
                             android:gravity="center_horizontal"
                             android:layout_gravity="center">
@@ -226,18 +225,22 @@
                             app:strokeColor="@android:color/darker_gray"
                             app:shapeAppearanceOverlay="@style/circleImageView"
                             android:src="@drawable/houseimg"
-                            android:layout_margin="10dp" />
+                            android:background="@drawable/round_bg"
+                            android:layout_margin="10dp"/>
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
                             android:text="Property"
                             android:gravity="center_horizontal"
                             android:layout_gravity="center">
 
                         </TextView>
+
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
             <LinearLayout
@@ -479,7 +482,8 @@
                             app:strokeColor="@android:color/darker_gray"
                             app:shapeAppearanceOverlay="@style/circleImageView"
                             android:src="@drawable/hands2"
-                            android:layout_margin="10dp"/>
+                            android:layout_margin="10dp"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
 
                         <TextView
                             android:layout_width="wrap_content"

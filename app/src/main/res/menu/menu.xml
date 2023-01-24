@@ -22,7 +22,7 @@
 
     </item>
     <item android:title="Profile"
-        android:id="@+id/ProBtn"
+        android:id="@+id/ProfileBtn"
         android:icon="@drawable/ic_person">
 
     </item>
