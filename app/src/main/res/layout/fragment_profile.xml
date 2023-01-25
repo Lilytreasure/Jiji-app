@@ -54,6 +54,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="My adds"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp">
 
                 </androidx.appcompat.widget.AppCompatButton>
@@ -62,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="Pro sales"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp"
                     android:layout_marginLeft="20dp">
 
@@ -79,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="Feedback"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp">
 
                 </androidx.appcompat.widget.AppCompatButton>
@@ -87,6 +90,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="Make money"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp"
                     android:layout_marginLeft="20dp">
 
@@ -101,9 +105,11 @@
                 android:orientation="horizontal">
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="150dp"
+                    android:layout_marginTop="20dp"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="Notifications"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp">
 
                 </androidx.appcompat.widget.AppCompatButton>
@@ -112,6 +118,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="ksh 0"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp"
                     android:layout_marginLeft="20dp">
 
@@ -129,7 +136,8 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="Followers"
-                    android:drawablePadding="10dp">
+                    android:drawablePadding="10dp"
+                    android:textAllCaps="false">
 
                 </androidx.appcompat.widget.AppCompatButton>
                 <androidx.appcompat.widget.AppCompatButton
@@ -137,11 +145,11 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_messages"
                     android:text="FaQ"
+                    android:textAllCaps="false"
                     android:drawablePadding="10dp"
                     android:layout_marginLeft="20dp">
 
                 </androidx.appcompat.widget.AppCompatButton>
-
 
 
             </LinearLayout>

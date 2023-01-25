@@ -11,4 +11,6 @@
     <color name="darker_grey">#A9A9A9</color>
     <color name="red">#FF0000</color>
     <color name="purple">#382c52</color>
+    <color name="custom">#298932</color>
+    <color name="customRed">#ed4f3f</color>
 </resources>

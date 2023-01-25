@@ -3,10 +3,7 @@ package com.example.jijiapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.jijiapp.Fragments.FragmentHome
-import com.example.jijiapp.Fragments.FragmentSaved
-import com.example.jijiapp.Fragments.FragmentSell
-import com.example.jijiapp.Fragments.FragmentSettings
+import com.example.jijiapp.Fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.svBtn->replaceFragments(FragmentSaved())
                 R.id.ProfileBtn->replaceFragments(FragmentSettings())
                 R.id.SellBtn->replaceFragments(FragmentSell())
+                R.id.MessBtn->replaceFragments(FragmentMessages())
             }
 
 

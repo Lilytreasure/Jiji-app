@@ -4,11 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FragmentSaved"
+    tools:context=".Fragments.FragmentMessages"
     android:fitsSystemWindows="true">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
@@ -27,16 +28,15 @@
                     android:id="@+id/backButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Adverts"
+                    android:text="Messages"
                     android:textAllCaps="false"
-                    android:drawableLeft="@drawable/ic_backarrow"
                     android:drawablePadding="20dp"
                     style="@style/Widget.AppCompat.Button.Borderless">
                 </androidx.appcompat.widget.AppCompatButton>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Searches"
+                    android:text="Notifications"
                     android:textAllCaps="false"
                     android:gravity="center"
                     android:layout_gravity="end"
@@ -50,16 +50,42 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+            <com.google.android.material.tabs.TabLayout
+                android:layout_below="@id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@id/topBar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                </com.google.android.material.tabs.TabItem>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="unread">
 
-        </androidx.recyclerview.widget.RecyclerView>
+                </com.google.android.material.tabs.TabItem>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="spam">
 
+                </com.google.android.material.tabs.TabItem>
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+<!--            <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--               android:src="@drawable/ic_games" >-->
+<!--                -->
+<!--            </androidx.appcompat.widget.AppCompatImageButton>-->
+<!--            -->
 
     </RelativeLayout>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
