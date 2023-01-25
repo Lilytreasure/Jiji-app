@@ -147,44 +147,59 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/FloatButtonMain"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="30dp"
-            android:layout_marginEnd="15dp"
-            android:src="@drawable/ic_messages">
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="30dp"
-            android:layout_marginEnd="15dp"
-            android:src="@drawable/ic_messages"
-            android:visibility="gone">
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/FloatFb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="30dp"
-            android:layout_marginEnd="15dp"
-            android:src="@drawable/ic_messages"
-            android:visibility="gone">
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
 
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/FloatFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_settings"
+                android:visibility="gone">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_messages"
+                android:visibility="gone">
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/FloatButtonMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_messages"
+                android:backgroundTint="@color/green">
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+        </LinearLayout>
 
 
 

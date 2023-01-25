@@ -5,15 +5,15 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.jijiapp.Fragments.FragmentHome
 import com.example.jijiapp.Fragments.FragmentSaved
+import com.example.jijiapp.Fragments.FragmentSell
 import com.example.jijiapp.Fragments.FragmentSettings
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     //A treplica of the JIJI mobile application
     //inspired by jiji.co.ke mobile app
+    //will be adding offline data caching capabilities
     private lateinit var  bottomNavigationView: BottomNavigationView
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         bottomNavigationView=findViewById(R.id.BottomView)
-
 
 
 
@@ -36,21 +35,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.hmBtn->replaceFragments(FragmentHome())
                 R.id.svBtn->replaceFragments(FragmentSaved())
                 R.id.ProfileBtn->replaceFragments(FragmentSettings())
+                R.id.SellBtn->replaceFragments(FragmentSell())
             }
 
 
             true
         }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -67,7 +57,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
 
 
 }

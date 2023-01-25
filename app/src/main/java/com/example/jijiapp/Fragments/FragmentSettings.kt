@@ -27,6 +27,9 @@ class FragmentSettings : Fragment() {
     private lateinit var floatActionButtonMain:FloatingActionButton
     private lateinit var floatActionButtonMessage:FloatingActionButton
     private lateinit var floatActionButtonFb:FloatingActionButton
+    //customize the floating action button to load child floating buttons
+
+    var floatButtonVisible=false
 
 
     override fun onCreateView(
@@ -42,6 +45,56 @@ class FragmentSettings : Fragment() {
         floatActionButtonMessage=view.findViewById(R.id.floatMessage)
         floatActionButtonFb=view.findViewById(R.id.FloatFb)
 
+         floatButtonVisible=false
+
+        floatActionButtonMain.setOnClickListener(){
+
+            if (!floatButtonVisible){
+                floatActionButtonMessage.show()
+                floatActionButtonFb.show()
+
+
+                floatActionButtonMessage.visibility=View.VISIBLE
+                floatActionButtonFb.visibility=View.VISIBLE
+
+                floatActionButtonMain.setImageDrawable(resources.getDrawable(R.drawable.ic_close))
+
+
+                floatButtonVisible=true
+
+            }
+            else{
+                floatActionButtonMessage.hide()
+                floatActionButtonFb.hide()
+
+                floatActionButtonMessage.visibility=View.GONE
+                floatActionButtonFb.visibility=View.GONE
+
+                floatActionButtonMain.setImageDrawable(resources.getDrawable(R.drawable.ic_messages))
+
+
+                floatButtonVisible=false
+
+
+            }
+
+
+            //adding default clickables to tst whether the populated floating buttons
+            //are clickable
+
+
+            floatActionButtonMessage.setOnClickListener(){
+                val context=requireContext().applicationContext
+                Toast.makeText(context,"Float message clicked",Toast.LENGTH_LONG).show()
+
+            }
+            floatActionButtonFb.setOnClickListener(){
+                val context=requireContext().applicationContext
+                Toast.makeText(context,"Float facebook  clicked",Toast.LENGTH_LONG).show()
+
+            }
+
+        }
 
 
         buttonDn.setOnClickListener(){

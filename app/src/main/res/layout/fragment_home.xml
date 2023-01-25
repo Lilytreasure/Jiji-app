@@ -151,6 +151,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center">
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTrend"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/Widget.AppCompat.Button.Borderless">
