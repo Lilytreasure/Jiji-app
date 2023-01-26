@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
+import androidx.fragment.app.FragmentTransaction
 import com.example.jijiapp.R
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,10 +24,11 @@ private const val ARG_PARAM2 = "param2"
  */
 class FragmentSettings : Fragment() {
     // TODO: Rename and change types of parameters
-    private  lateinit var buttonDn:AppCompatButton
-    private lateinit var floatActionButtonMain:FloatingActionButton
-    private lateinit var floatActionButtonMessage:FloatingActionButton
-    private lateinit var floatActionButtonFb:FloatingActionButton
+
+    private lateinit var floatActionButtonMain: FloatingActionButton
+    private lateinit var floatActionButtonMessage: FloatingActionButton
+    private lateinit var floatActionButtonFb: FloatingActionButton
+    private lateinit var  buttonDn: AppCompatButton
     //customize the floating action button to load child floating buttons
 
     var floatButtonVisible=false
@@ -38,14 +40,33 @@ class FragmentSettings : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val  view=inflater.inflate(R.layout.fragment_profile, container, false)
-        buttonDn=view.findViewById(R.id.profiledn)
+
 
         //identify the floating action buttons by id
         floatActionButtonMain=view.findViewById(R.id.FloatButtonMain)
         floatActionButtonMessage=view.findViewById(R.id.floatMessage)
         floatActionButtonFb=view.findViewById(R.id.FloatFb)
 
-         floatButtonVisible=false
+
+        buttonDn=view.findViewById(R.id.profiledn)
+        //test whether the button is acessible
+
+        //dispaly another fragment when  the button is clicked
+        // the displayed fragment will  clear the main view and  be set
+        //as the new display
+
+        buttonDn.setOnClickListener(){
+
+            //open a custom fragment from this parent fragment
+            val  customFragment=FragmentPersonal()
+            val transaction: FragmentTransaction =requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.mainView,customFragment)
+            transaction.commit()
+
+        }
+
+
+        floatButtonVisible=false
 
         floatActionButtonMain.setOnClickListener(){
 
@@ -85,28 +106,20 @@ class FragmentSettings : Fragment() {
 
             floatActionButtonMessage.setOnClickListener(){
                 val context=requireContext().applicationContext
-                Toast.makeText(context,"Float message clicked",Toast.LENGTH_LONG).show()
+                Toast.makeText(context,"Float message clicked", Toast.LENGTH_LONG).show()
 
             }
             floatActionButtonFb.setOnClickListener(){
                 val context=requireContext().applicationContext
-                Toast.makeText(context,"Float facebook  clicked",Toast.LENGTH_LONG).show()
+                Toast.makeText(context,"Float facebook  clicked", Toast.LENGTH_LONG).show()
 
             }
 
-        }
-
-
-        buttonDn.setOnClickListener(){
-            val appContext = requireContext().applicationContext
-            Toast.makeText(appContext,"Hello Dennis",Toast.LENGTH_LONG).show()
         }
 
 
         //customize the items in  the floatingAction Button to
         //populate other icons when clicked
-
-
 
         return view
     }

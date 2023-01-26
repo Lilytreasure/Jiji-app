@@ -38,180 +38,182 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <LinearLayout
-            android:layout_below="@id/topBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:fitsSystemWindows="true">
+
             <LinearLayout
+                android:layout_below="@id/topBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:fitsSystemWindows="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="My adds"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp">
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="My adds"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp">
 
-                </androidx.appcompat.widget.AppCompatButton>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="Pro sales"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="Pro sales"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp"
-                    android:layout_marginLeft="20dp">
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="Feedback"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp">
 
-                </androidx.appcompat.widget.AppCompatButton>
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="Make money"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="Notifications"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="ksh 0"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="Followers"
+                        android:drawablePadding="10dp"
+                        android:textAllCaps="false">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_messages"
+                        android:text="FaQ"
+                        android:textAllCaps="false"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+                </LinearLayout>
 
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="Feedback"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp">
-
-                </androidx.appcompat.widget.AppCompatButton>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="Make money"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp"
-                    android:layout_marginLeft="20dp">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="Notifications"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp">
-
-                </androidx.appcompat.widget.AppCompatButton>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="ksh 0"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp"
-                    android:layout_marginLeft="20dp">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="Followers"
-                    android:drawablePadding="10dp"
-                    android:textAllCaps="false">
-
-                </androidx.appcompat.widget.AppCompatButton>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_messages"
-                    android:text="FaQ"
-                    android:textAllCaps="false"
-                    android:drawablePadding="10dp"
-                    android:layout_marginLeft="20dp">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/FloatFb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginEnd="15dp"
-                android:src="@drawable/ic_settings"
-                android:visibility="gone">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatMessage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginEnd="15dp"
-                android:src="@drawable/ic_messages"
-                android:visibility="gone">
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/FloatButtonMain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginEnd="15dp"
-                android:src="@drawable/ic_messages"
-                android:backgroundTint="@color/green">
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/FloatFb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_settings"
+                    android:visibility="gone">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_messages"
+                    android:visibility="gone">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/FloatButtonMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_messages"
+                    android:backgroundTint="@color/green">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 
 
-        </LinearLayout>
+            </LinearLayout>
 
 
 
-    </RelativeLayout>
+        </RelativeLayout>
+
 
 
 

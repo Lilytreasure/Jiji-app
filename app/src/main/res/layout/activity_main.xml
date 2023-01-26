@@ -6,31 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:fitsSystemWindows="true">
-    <FrameLayout
-        android:id="@+id/mainView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/BottomView">
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/BottomView">
 
+        </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/menu"
-        android:padding="5dp"
-        app:labelVisibilityMode="labeled"
-        android:theme="@style/BottomNavigationTheme">
-
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu"
+            android:padding="5dp"
+            app:labelVisibilityMode="labeled"
+            android:theme="@style/BottomNavigationTheme">
 
 
-
-
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </RelativeLayout>
