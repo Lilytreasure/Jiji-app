@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         replaceFragments(FragmentHome())
 
-
-
         bottomNavigationView.setOnItemSelectedListener(){
             when(it.itemId){
                 R.id.hmBtn->replaceFragments(FragmentHome())
@@ -35,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.SellBtn->replaceFragments(FragmentSell())
                 R.id.MessBtn->replaceFragments(FragmentMessages())
             }
-
 
             true
         }

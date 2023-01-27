@@ -32,7 +32,9 @@
                     android:text="Post New add"
                     android:drawableLeft="@drawable/ic_backarrow"
                     android:drawablePadding="20dp"
-                    style="@style/Widget.AppCompat.Button.Borderless">
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
                 </androidx.appcompat.widget.AppCompatButton>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
@@ -40,7 +42,10 @@
                     android:text="Clear"
                     android:gravity="center"
                     android:layout_gravity="end"
-                    android:layout_marginRight="15dp">
+                    android:layout_marginRight="15dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
 
                 </androidx.appcompat.widget.AppCompatButton>
 
@@ -58,7 +63,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal">
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,7 +84,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal">
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,26 +96,19 @@
 
 
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
+            <androidx.appcompat.widget.AppCompatEditText
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Description">
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Description*">
 
-                </TextView>
-
-
-
-            </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.AppCompatEditText>
 
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal">
                 <TextView
                     android:layout_width="wrap_content"
@@ -128,6 +126,36 @@
 
 
             </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:hint="Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone number(digits only)*"
+                android:layout_marginTop="10dp">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:text="Post Add"
+                android:textAllCaps="false">
+
+            </androidx.appcompat.widget.AppCompatButton>
 
 
         </LinearLayout>

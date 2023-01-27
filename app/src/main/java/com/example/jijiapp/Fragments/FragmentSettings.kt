@@ -91,7 +91,7 @@ class FragmentSettings : Fragment() {
                 floatActionButtonMessage.visibility=View.GONE
                 floatActionButtonFb.visibility=View.GONE
 
-                floatActionButtonMain.setImageDrawable(resources.getDrawable(R.drawable.ic_messages))
+                floatActionButtonMain.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_live_help_24))
 
 
                 floatButtonVisible=false

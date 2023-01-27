@@ -26,11 +26,13 @@
                 app:titleCentered="false">
               <androidx.appcompat.widget.AppCompatButton
                   android:id="@+id/profiledn"
-                  android:layout_width="wrap_content"
+                  android:layout_width="50dp"
                   android:layout_height="wrap_content"
                   android:text="Lt"
                   android:drawableLeft="@drawable/ic_person"
-                  style="@style/Widget.AppCompat.Button.Borderless">
+                  style="@style/Widget.AppCompat.Button.Borderless"
+                  android:background="@drawable/round_bg"
+                  android:backgroundTint="@color/custom">
               </androidx.appcompat.widget.AppCompatButton>
 
 
@@ -80,7 +82,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_messages"
+                        android:drawableLeft="@drawable/ic_feedback"
                         android:text="Feedback"
                         android:textAllCaps="false"
                         android:drawablePadding="10dp">
@@ -89,7 +91,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_messages"
+                        android:drawableLeft="@drawable/ic_emoji"
                         android:text="Make money"
                         android:textAllCaps="false"
                         android:drawablePadding="10dp"
@@ -108,7 +110,7 @@
                         android:layout_width="150dp"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_messages"
+                        android:drawableLeft="@drawable/ic_notify"
                         android:text="Notifications"
                         android:textAllCaps="false"
                         android:drawablePadding="10dp">
@@ -135,7 +137,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_messages"
+                        android:drawableLeft="@drawable/ic_person"
                         android:text="Followers"
                         android:drawablePadding="10dp"
                         android:textAllCaps="false">
@@ -144,7 +146,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_messages"
+                        android:drawableLeft="@drawable/ic_question"
                         android:text="FaQ"
                         android:textAllCaps="false"
                         android:drawablePadding="10dp"
@@ -189,7 +191,8 @@
                     android:layout_marginBottom="30dp"
                     android:layout_marginEnd="15dp"
                     android:src="@drawable/ic_messages"
-                    android:visibility="gone">
+                    android:visibility="gone"
+                    android:backgroundTint="@color/custom">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
@@ -201,8 +204,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginBottom="30dp"
                     android:layout_marginEnd="15dp"
-                    android:src="@drawable/ic_messages"
-                    android:backgroundTint="@color/green">
+                    android:src="@drawable/ic_baseline_live_help_24">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 

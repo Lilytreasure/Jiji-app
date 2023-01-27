@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.fragment.app.FragmentTransaction
 import com.example.jijiapp.R
@@ -22,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
 class FragmentPersonal : Fragment() {
     // TODO: Rename and change types of parameters
 
-    private  lateinit var  buttonSettingsBack: AppCompatImageButton
+    private  lateinit var  buttonSettingsBack: AppCompatButton
 
 
 
@@ -36,10 +37,7 @@ class FragmentPersonal : Fragment() {
         buttonSettingsBack=view.findViewById(R.id.settingsBack)
 
             //return to the previous fragment
-
         buttonSettingsBack.setOnClickListener(){
-
-
             val  customFragment=FragmentSettings()
             val transaction: FragmentTransaction =requireFragmentManager().beginTransaction()
             transaction.replace(R.id.mainView,customFragment)

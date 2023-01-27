@@ -28,8 +28,6 @@ class FragmentHome : Fragment() {
     private  lateinit var  cardViewTrend: CardView
 
 
-
-
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,7 +44,6 @@ class FragmentHome : Fragment() {
             Toast.makeText(context,"Trend cardview",Toast.LENGTH_LONG).show()
 
         }
-
 
 
 
