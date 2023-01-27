@@ -29,8 +29,8 @@ Some ui elements will  be stripped to add relevant viewholders to integrate the 
 
  <table align="center">
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/78819932/215044239-b1c10dbc-7478-49c2-999f-8623feaecf84.png)" alt="Home" style="width:250px;height:500px;"></td>
-      <td><img src="https://user-images.githubusercontent.com/78819932/215044295-b96f91d6-4810-4598-98ca-f2bd4fcc5d0e.png)" alt="Sell" style="width:250px;height:500px;"></td>
+    <td><img src="https://user-images.githubusercontent.com/78819932/215044239-b1c10dbc-7478-49c2-999f-8623feaecf84.png" alt="Home" style="width:250px;height:500px;"></td>
+      <td><img src="https://user-images.githubusercontent.com/78819932/215044295-b96f91d6-4810-4598-98ca-f2bd4fcc5d0e.png" alt="Sell" style="width:250px;height:500px;"></td>
     
    
   </tr>
