@@ -43,6 +43,15 @@ Some ui elements will  be stripped to add relevant viewholders to integrate the 
   </tr>
  
  
+  
+ <tr>
+    <td><img src="https://user-images.githubusercontent.com/78819932/215044441-82dbbd08-2b38-4a6f-a133-93e434a2e89a.png" alt="Settings" style="width:250px;height:500px;"></td>
+     
+    
+   
+  </tr>
+ 
+ 
  
  
   
