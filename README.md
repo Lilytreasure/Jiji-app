@@ -1,5 +1,8 @@
 # Jiji-app
-inspired by jiji  mobile app application
+inspired by jiji  mobile app application<br>
+
+The user interface has been optimized to increase the accuracy of user clicks-To ensure users dont click unwanted items<br>
+
 Development in progress.........
 # Features in progress
 Offline data caching <br>
